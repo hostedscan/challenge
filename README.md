@@ -26,8 +26,7 @@ The idea is to test a small full stack problem in the vein of the work we do. Wh
 2. Once a target has been received by the backend, run some checks on the headers and response returned when making a request to the target:
   - *Required:* Is an x-frame-options security header setup and secure?
   - *Required:* Is HSTS setup and secure?
-  - *Required:* Do either the headers or the page contain a CSP policy? Does the CSP appear relatively secure?
-  - *Optional, time willing:* Does the page serve using a correctly signed SSL certificate? (https://badssl.com/ can be useful for testing, not all cases need handling but error catching would be good)
+  - *Required:* Do the headers contain a CSP policy? Does the CSP appear relatively secure?
 
 3. Upon completing the checks, record the results to the database.
 
